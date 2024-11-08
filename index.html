@@ -5,35 +5,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fachwoche 3.2 - Javascript Aufgaben</title>
         <link rel="stylesheet" href="styles.css">
-        <script async src="scripts.js"></script>
+        <script defer src="scripts.js"></script>
     </head>
 
     <body>
-        <main>
-            
-        </main>
-
         <section id="aufgabe-1">
             <div class="aufgaben">
-            <h1>Aufgabe 1</h1>
-            <button id="clickme-button">Click Me</button>
-        </div>
+                <h1>Aufgabe 1</h1>
+                <button id="clickme-button">Küsse mich</button>
+            </div>
         </section>
 
         <section id="aufgabe-2">
-            <div class="aufgaben"><h1>Aufgabe 2</h1><button id="date-button">Welches Datum?</button><div id="textfield-date"></div>
-        </div>
-            
+            <div class="aufgaben">
+                <h1>Aufgabe 2</h1>
+                <button id="date-button">Welches Datum ist heute?</button>
+                <input name=""date" id="inputDate" type="text" readonly>
+            </div>
         </section>
 
-        <section></section>
-        <div class="aufgaben"></div>
-        <section><div class="aufgaben"><h1>Aufgabe 3</h1></div></section>
+        <section><div class="aufgaben">
+            <h1>Aufgabe 3</h1>
+            <button id="reset">Reset</button>
+            <p>Wie fühlst du dich? </p><select name="Stimmungen" id="Stimmungen">
+                <option value="" selected select disabled>wähle deine Stimmung</option>
+                <option value="1">glücklich</option>
+                <option value="2">traurig</option>
+                <option value="3">geärgert</option>
+                <option value="4">gelangweilt</option>
+            </select>
+            <p class="aufgabe-3">Du bist </p><p class=aufgabe-3 id="Emotionszustand"></p>
+
+        
+        
+        </div></section>
         <section><div class="aufgaben"><h1>Aufgabe 4</h1></div></section>
         <section><div class="aufgaben"><h1>Aufgabe 5</h1></div></section>
         <section><div class="aufgaben"><h1>Zusatzaufgabe 1</h1></div></section>
         <section><div class="aufgaben"><h1>Zusatzaufgabe 2</h1></div></section>
         <section><div class="aufgaben"><h1>Zusatzaufgabe 3</h1></div></section>
-
     </body>
 </html>
