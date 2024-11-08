@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(#f4f4f4 20%, transparent 21% ,transparent 79%, #f4f4f4 80%);
+    background-size: 3em 3em;
+    background-color: #ffffff;
+    opacity: 1;    
+    background-size: 3em 3em;
+    background-color: #ffffff;
+    opacity: 1;
+    justify-content: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+
+
+.aufgaben {
+    min-height: 100px;
+    background: rgba(220, 220, 220, 0.8);
+    justify-content: center;
+    width: 30vw;
+    border-radius:5px;
+    margin: 40px auto;
+    padding: 10px;
+}
+
+.aufgaben *{
+    justify-content: center;
+    align-content: center;
+}
