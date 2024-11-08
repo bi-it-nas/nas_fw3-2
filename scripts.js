@@ -3,7 +3,7 @@
 const aufgabe1 = document.getElementById("clickme-button");
 
 aufgabe1.addEventListener("click", function() {
-  alert('Du hast einen Kuss erhalten <3');
+  alert('Du wurdest geküsst <3');
 });
 
 // Aufgabe 2
@@ -29,16 +29,43 @@ aufgabe2.addEventListener("click", function() {
 
 //Aufgabe 3
 
-document.getElementById("Stimmungen").addEventListener('change', function() {
+const aufgabe3p = document.querySelectorAll('.aufgabe-3');
+const reset = document.getElementById('reset');
+const stimmungenSelect = document.getElementById('Stimmungen');
+const emotionszustand = document.getElementById('Emotionszustand');
+
+// Listen for change on the "Stimmungen" element
+stimmungenSelect.addEventListener('change', function() {
+  // Get the value of the selected option
   const emotion = this.value;
 
+  // Show all elements with class 'aufgabe-3'
+  aufgabe3p.forEach(function(element) {
+    element.style.display = 'block';
+  });
+
+  // Set the text based on the emotion selected
   if (emotion === '1') {
-    document.getElementById('Emotionszustand').textContent = "glücklich!";
+    emotionszustand.textContent = "glücklich!";
   } else if (emotion === '3') {
-    document.getElementById('Emotionszustand').textContent = "geärgert!";
+    emotionszustand.textContent = "geärgert!";
   } else if (emotion === '4') {
-    document.getElementById('Emotionszustand').textContent = "gelangweilt!";
+    emotionszustand.textContent = "gelangweilt!";
   } else if (emotion === '2')  {
-    document.getElementById("Emotionszustand").textContent = "traurig!"
+    emotionszustand.textContent = "traurig!";
   }
+});
+
+// Reset the form and hide elements when the reset button is clicked
+reset.addEventListener("click", function(){
+  // Reset the value of the "Stimmungen" select input
+  stimmungenSelect.value = ''; 
+  
+  // Hide all elements with class 'aufgabe-3'
+  aufgabe3p.forEach(function(element) {
+    element.style.display = 'none';
+  });
+
+  // Optionally reset the Emotionszustand text
+  emotionszustand.textContent = '';
 });
